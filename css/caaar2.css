@@ -1,0 +1,317 @@
+.img
+{
+    margin: 0;
+    padding: 0;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider
+{
+    width: 950px;
+    height: 550px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+.slides
+{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+  
+.slides input
+{
+    display: none;
+}
+  
+.slide
+{
+    width: 20%;
+    transition: 2s;
+}
+  
+.slide img
+{
+    width: 950px;
+    height: 550px;
+}
+  
+  /*css for manual slide navigation*/
+  
+.navigation-manual
+{
+    position: absolute;
+    width: 950px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+  
+.manual-btn
+{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+  
+.manual-btn:not(:last-child)
+{
+    margin-right: 40px;
+}
+  
+.manual-btn:hover
+{
+    background: #40D3DC;
+}
+  
+#radio1:checked ~ .first
+{
+    margin-left: 0;
+}
+  
+#radio2:checked ~ .first
+{
+    margin-left: -20%;
+}
+  
+#radio3:checked ~ .first
+{
+    margin-left: -40%;
+}
+  
+#radio4:checked ~ .first
+{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first
+{
+    margin-left: -80%;
+}
+  
+#radio6:checked ~ .first
+{
+    margin-left: -100%;
+}
+  
+#radio7:checked ~ .first
+{
+    margin-left: -120%;
+}
+  
+#radio8:checked ~ .first
+{
+    margin-left: -140%;
+}
+
+#radio9:checked ~ .first
+{
+    margin-left: -160%;
+}
+  
+#radio110:checked ~ .first
+{
+    margin-left: -180%;
+}
+  /*css for automatic navigation*/
+
+.navigation-auto
+{
+    position: absolute;
+    display: flex;
+    width: 950px;
+    justify-content: center;
+    margin-top: 510px;
+}
+  
+.navigation-auto div
+{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+  
+.navigation-auto div:not(:last-child)
+{
+    margin-right: 40px;
+}
+  
+#radio1:checked ~ .navigation-auto .auto-btn1
+{
+    background: #40D3DC;
+}
+  
+#radio2:checked ~ .navigation-auto .auto-btn2
+{
+    background: #40D3DC;
+}
+  
+#radio3:checked ~ .navigation-auto .auto-btn3
+{
+    background: #40D3DC;
+}
+
+
+
+.back
+{
+    background-color: #7e7e7e1a;
+    overflow: hidden;
+    margin: 5% auto;
+    padding: 20px 20px 40px 20px;
+    box-shadow: 0px 0px 8px 0px #747474;
+    width: 80%;
+    border-radius: 20px;
+    min-height: 500px;
+}
+
+.h
+{
+    text-align: center;
+    background: rgb(23, 136, 0);
+    padding: 1px;
+    margin: -20px -20px 40px -20px;
+}
+
+
+table
+{
+    display: inline;
+}
+
+tr
+{
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.table1
+{
+    float: left;
+    display: grid;
+    width: 33.333%;
+}
+
+.table2
+{
+    float: left;
+    display: grid;
+    width: 33.33%;
+}
+
+.table3
+{
+    display: grid;
+    width: 33.333%;
+}
+
+.content-table thead tr 
+{
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+  
+.content-table th,
+.content-table td 
+{
+    padding: 12px 15px;
+}
+  
+.content-table tbody tr 
+{
+    border-bottom: 1px solid #009879;
+}
+  
+.content-table tbody tr:nth-of-type(even) 
+{
+    background-color: #f3f3f3;
+}
+  
+.content-table tbody tr:last-of-type 
+{
+    border-bottom: 2px solid #009879;
+}
+  
+.content-table tbody tr.active-row 
+{
+    font-weight: bold;
+    color: #009879;
+}
+  
+
+.star-rating
+{
+    display: inherit;
+    margin: 0 auto;
+}
+
+.star-rating input
+{
+    display: none;
+}
+
+.star-rating label
+{
+    display: inline-block;
+    width: 20px;
+    position:relative;
+    cursor: pointer;
+    padding: 10px;
+    color:rgb(134, 134, 134);
+}
+
+.star-rating label:before
+{
+    content: "\2605";
+    position: absolute;
+    font-size: 50px;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+}
+
+.star-rating label:after
+{
+    content: "\2605";
+    position: absolute;
+    font-size: 50px;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    color: yellow;
+    opacity: 0;
+}
+
+.star-rating label:hover::after
+{
+    opacity: 1;
+}
+
+h3
+{
+    margin-top: 24px;
+    float: left;
+    margin-right: 8px;
+}
+
+@media(max-width:1010px)
+{
+
+    
+}
+
+
+
+
+  

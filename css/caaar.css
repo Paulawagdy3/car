@@ -1,0 +1,138 @@
+
+
+.img
+{
+    float: left;
+}
+img
+{
+    width: auto;
+    max-width: 600px;
+}
+
+.table1-intro
+{
+    float: left;
+    font-size: 20px;
+    padding: 0 90px;
+}
+
+.table1
+{
+    border: 2px solid rgb(160, 149, 0);
+    background-color: #7e7e7e1a;
+    display: flex;
+    margin-top: 100px;
+}
+
+h1
+{
+    text-align: center;
+    margin: 0;
+    background: #adadad;
+}
+
+.star-rating input
+{
+    display: none;
+}
+
+.star-rating label
+{
+    display: inline-block;
+    width: 20px;
+    position:relative;
+    cursor: pointer;
+    padding: 10px;
+    color:rgb(134, 134, 134);
+}
+
+.star-rating label:before
+{
+    content: "\2605";
+    position: absolute;
+    font-size: 50px;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+}
+
+.star-rating label:after
+{
+    content: "\2605";
+    position: absolute;
+    font-size: 50px;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    color: yellow;
+    opacity: 0;
+}
+
+.star-rating label:hover::after
+{
+    opacity: 1;
+}
+@media(max-width:1245px)
+{
+    .table1-intro
+    {
+        padding: 0;
+        float: right;
+    }
+
+    
+}
+@media(max-width:1010px)
+{
+    .img
+    {
+        float:none;
+        margin: 0 13%;
+    }
+
+    .table1-intro
+    {
+        float:none;
+        margin: 0 13%;
+        padding: 0 0 20px 0;
+    }
+
+    .star-rating 
+    {
+        float: right;
+        margin-top: -130px;
+    }
+    
+}
+
+.table2,
+.table3,
+.table4
+{
+    width: 33.3333%;
+    float: left;
+}
+
+.back
+{
+    background-color: #7e7e7e1a;
+    overflow: hidden;
+    margin: 5% auto;
+    padding: 20px;
+    box-shadow: -2px 1px 20px 0px;
+    width: 94%;
+    border-radius: 20px;
+}
+@media(max-width:1010px)
+{
+    .table2,
+    .table3,
+    .table4
+    {
+        display: table;
+        margin: 10px 20%;
+        width: auto;
+        float: none;
+    }
+}
